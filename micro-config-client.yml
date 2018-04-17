@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: config-client-7102
+server:
+  port: 7102
+
+eureka: 
+  client:
+    service-url: 
+      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka
+      
+---
+spring:
+  profiles: beta
+  application:
+    name: config-client-7103
+server:
+  port: 7103
+
+eureka: 
+  client:
+    service-url: 
+      defaultZone: http://edmin:edmin@eureka7002.com:7002/eureka
