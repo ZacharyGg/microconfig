@@ -2,7 +2,7 @@ spring:
   profiles:
     active:
     - dev
---
+---
 server:
   port: 7001
 
@@ -28,7 +28,7 @@ security:
     name: edmin     # 用户名
     password: edmin  # 密码
     
---
+---
 server:
   port: 7001
 
