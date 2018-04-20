@@ -25,7 +25,7 @@ security:
   basic:
     enabled: true    # 启用安全认证处理
   user:
-    name: edmin     # 用户名
+    name: edmindev     # 用户名
     password: edmin  # 密码
     
 ---
