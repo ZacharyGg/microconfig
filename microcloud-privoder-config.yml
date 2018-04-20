@@ -1,0 +1,93 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+
+---
+server:
+  port: 8001
+  
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
+  instance:
+    instance-id: microdept8001.com
+    prefer-ip-address: true
+    
+info: 
+  app.name: www.microdept8001.com
+  company.name: hlxd
+  build.groupId: $project.groupId$
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+      
+      
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: cn.mldn.vo
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml 
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource 
+    url: jdbc:mysql://localhost:3306/mldn8001
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    dbcp2: 
+      min-idle: 5                                
+      initial-size: 5                              
+      max-total: 5                                 
+      max-wait-millis: 200        
+  application:
+    name: microcloud-provider-dept
+  profiles:
+    active:
+    - dev
+    
+ 
+---
+server:
+  port: 8002
+  
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
+  instance:
+    instance-id: microdept8001.com
+    prefer-ip-address: true
+    
+info: 
+  app.name: www.microdept8001.com
+  company.name: hlxd
+  build.groupId: $project.groupId$
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+      
+      
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: cn.mldn.vo
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml 
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource 
+    url: jdbc:mysql://localhost:3306/mldn8001
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    dbcp2: 
+      min-idle: 5                                
+      initial-size: 5                              
+      max-total: 5                                 
+      max-wait-millis: 200        
+  application:
+    name: microcloud-provider-dept
+  profiles:
+    active:
+    - beta
+    
