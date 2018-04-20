@@ -11,7 +11,7 @@ server:
 eureka:
   client:
     service-url: 
-      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
+      defaultZone: http://edmindev:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
   instance:
     instance-id: microdept8001.com
     prefer-ip-address: true
@@ -55,7 +55,7 @@ server:
 eureka:
   client:
     service-url: 
-      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
+      defaultZone: http://edmindev:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
   instance:
     instance-id: microdept8001.com
     prefer-ip-address: true
