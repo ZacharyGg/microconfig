@@ -20,7 +20,7 @@ info:
   company.name: hlxd
   build.groupId: $project.groupId$
   build.artifactId: $project.artifactId$
-  app.version: V22.2.2
+  app.version: V33.3.3
       
       
 mybatis:
