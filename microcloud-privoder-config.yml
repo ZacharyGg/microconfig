@@ -2,8 +2,7 @@ spring:
   profiles:
     active:
     - dev
-
-
+    
 ---
 server:
   port: 8001
@@ -11,7 +10,7 @@ server:
 eureka:
   client:
     service-url: 
-      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
+      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka
   instance:
     instance-id: microdept8001.com
     prefer-ip-address: true
@@ -58,7 +57,7 @@ server:
 eureka:
   client:
     service-url: 
-      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka,http://edmin:edmin@eureka7002.com:7002/eureka,http://edmin:edmin@eureka7003.com:7003/eureka
+      defaultZone: http://edmin:edmin@eureka7001.com:7001/eureka
   instance:
     instance-id: microdept8002.com
     prefer-ip-address: true
@@ -91,3 +90,8 @@ spring:
       max-wait-millis: 200        
   application:
     name: microcloud-provider-dept
+  rabbitmq:
+    host: rabbitmq.com
+    port: 5672
+    username: hlxd
+    password: hlxd
