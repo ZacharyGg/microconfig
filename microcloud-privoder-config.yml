@@ -25,7 +25,7 @@ info:
       
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: cn.mldn.vo
+  type-aliases-package: cn.hlxd.vo
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml 
 spring:
