@@ -44,11 +44,6 @@ spring:
       max-wait-millis: 200        
   application:
     name: microcloud-provider-dept
-  rabbitmq:
-    host: rabbitmq.com
-    port: 15672
-    username: guest
-    password: guest
     
     
 
