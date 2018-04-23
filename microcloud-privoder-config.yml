@@ -12,11 +12,11 @@ eureka:
     service-url: 
       defaultZone: http://edmin:edmin@eurekaserver.com:7001/eureka,http://edmin:edmin@eurekaserverha.com:7002/eureka
   instance:
-    instance-id: microdept8001.com
+    instance-id: microdept.com
     prefer-ip-address: true
     
 info: 
-  app.name: www.microdept8001.com
+  app.name: www.microdept.com
   company.name: hlxd
   build.groupId: $project.groupId$
   build.artifactId: $project.artifactId$
