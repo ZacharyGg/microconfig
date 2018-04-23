@@ -44,7 +44,11 @@ spring:
       max-wait-millis: 200        
   application:
     name: microcloud-provider-dept
-    
+  rabbitmq:
+    host: rabbitmq.com
+    port: 5672
+    username: hlxd
+    password: hlxd
     
 
 ---
